@@ -28,7 +28,21 @@ img {
   width: 33%;
 }
 select, button, input { 
-  margin: auto 1rem;
-  width: 100px;
+  width: 5rem;
 }
-  
+label {
+  margin: auto 1rem;
+}
+div {
+  margin-bottom: 10px;
+}
+
+input:invalid+span:after {
+  content: '✖';
+  padding-left: 5px;
+}
+
+input:valid+span:after {
+  content: '✓';
+  padding-left: 5px;
+}
