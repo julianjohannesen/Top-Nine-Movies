@@ -1,7 +1,7 @@
-const apiKey = "5d576382955ff5829fc3844390db4427";
+const apiKey = "49bc2272c9e6c5fd9f31d28b35b9dbe8";
 const baseAPIUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&sort_by=popularity.desc`;
 const posterBaseUrl = "https://image.tmdb.org/t/p/w500";
-let genreCode, theYear, posterPath, imgUrl
+let genreCode, theYear, posterPath, imgUrl;
 
 $(function () {  
   function afterGoClicked() {
@@ -24,7 +24,7 @@ $(function () {
         if(posterPath && theYear){
           imgUrl = posterBaseUrl + posterPath;
         } else {
-          imgUrl = "img/placeholder.jpg"
+          imgUrl = "img/placeholder.jpg";
         }
         document.getElementById("#movies").style.display = "block";
         val.setAttribute("src", imgUrl);
