@@ -26,7 +26,7 @@ $(function () {
         } else {
           imgUrl = "img/placeholder.jpg";
         }
-        document.getElementById("#movies").style.display = "block";
+        //document.getElementById("#movies").style.display = "block";
         val.setAttribute("src", imgUrl);
       });
   }
